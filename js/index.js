@@ -29,7 +29,7 @@ function calculateAll() {
   // ITERATION 3
   let totalSpan = document.querySelector('#total-value span');
   totalSpan.innerHTML = totalValue;
-  
+
 }
 
 // ITERATION 4
@@ -49,6 +49,11 @@ function createProduct() {
 window.addEventListener('load', () => {
   const calculatePricesBtn = document.getElementById('calculate');
   calculatePricesBtn.addEventListener('click', calculateAll);
-
+  
+  let removeButtons = document.getElementsByClassName(' btn-remove');
+  for (let index = 0; index < removeButtons.length; index++) {
+    removeButtons[i].addEventListener('click', removeProduct);
+    
+  }
   //... your code goes here
 });
